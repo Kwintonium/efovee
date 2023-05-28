@@ -48,11 +48,12 @@
 							<article id="About">
 								<h2 class="major">About</h2>
 								<!-- <span class="image main"><img width="100" src="images/legend.png" alt="" /></span> -->
-								<p>Efovee provides custom geometric camera calibration and validation services for your camera's needs. To put it simply, camera calibration allows a camera to measure an object's distance in the real world like a ruler as seen below where the camera measures the distance to the stop sign.</a></p>
+								<p>Efovee provides custom geometric camera calibration and validation services for your camera's needs. To put it simply, camera calibration allows a camera to understand an object's location in the real world, like a ruler, as seen below where the camera measures the 3D coordinates of the stop sign.</a></p>
 								<span class="image main"><img src="images/calibration_explanation.gif" alt="" /></span>
-								<p>Geometric camera calibration is becoming increasingly important in machine vision industries such as automotive, aerospace, and many others. Machine vision cameras are rapidly improving in quality every year, but the demand for accuracy is growing stringent. At Efovee we strive to understand your camera's accuracy needs, and we provide meaningful feedback on what accuracies can be achieved - more than just reprojection error.</p>
+								<p>High accuracy geometric camera calibration is becoming more important in machine vision industries such as automotive, aerospace, and many others. At Efovee we strive to understand your camera's accuracy needs, and we provide meaningful feedback on what accuracies can be achieved - more than just reprojection error.</p>
 								<p>&nbsp</p>
 								<h3 style="text-align:center">Efovee currently provides the following services to its customers:</h3>
+								<p>&nbsp</p>
 								<i class="fa fa-camera" style="float:left"></i>
 								<h4 style="text-indent: 25px">  Camera Calibration</h4>
 								<p>Efovee calibrates your cameras for you. We provide custom calibration to get the highest accuracy camera model possible.</p>
@@ -64,6 +65,7 @@
 								<p>Efovee validates your cameras at range providing you with a meaningful real world understanding of your camera's calibration accuracy.</p>
 								<p>&nbsp</p>
 								<h4 style="margin-bottom:25px">Efovee is currently working on the following features...</h4>
+								<p>&nbsp</p>
 								<i class="fa fa-wifi" style="float:left"></i>
 								<h4 style="text-indent: 25px">  Online API</h4>
 								<p>If you already have your own calibration setup, you can call the Efovee API to calibrate your cameras.</p>
@@ -78,11 +80,9 @@
 								<p>Efovee provides custom geometric calibration solutions to get the best accuracy model derived from your cameras. We are able to meet very tight accuracy requirements achieving accuracies orders of magnitude lower than open source alternatives and competitors.</p>
 								<p>We achieve such accuracies by customizing unique solutions for every camera module. Our calibration process and software are very flexible, so Efovee is easily tailored to your needs for a quick turnaround time. Calibration statistics are also provided which will help you understand how your camera meaningfully performs in practice.</p>
 								<p>&nbsp</p>
-								<h3>Calibration Example</h3>
+								<h3>Efovee Calibration Example</h3>
 								<span class="image main"><img src="images/captureplan_.gif" alt="" /></span>
-								<p>&nbsp</p>
-								<h3>Calibration Results</h3>
-								<p><b>Focal Length (FLx, FLy): [782.4555721748328 781.1069995503218] <br>
+								<p><b>Focal Length (FLx, FLy): [782.4555721748328, 781.1069995503218] <br>
 								Principal Point (PPx, PPy): [942.6003209107129 , 550.7687616615057] <br>
 								Center of Distortion (CoDx, CoDy): [944.872667906343 , 553.0388902378644] <br>
 								Distortion Coefficients (k1....kn): [-8.62715229e-04, -6.58635305e-04, -7.96401981e-04, -4.27027830e-04, -2.81477023e-06, -9.33947521e-04]</b></p>
@@ -93,10 +93,11 @@
 								<h2 class="major">Validation</h2>
 								<p>Reprojection error is certainly a meaningful statistic ubiquitous to geometric camera calibration, but reprojection error may be biased by the bundle adjustment while estimating the parameters resulting in an inaccurate calibration. </p>
 								<p>So how does the camera perform in reality?</p>
-								<p>At Efovee, we validate cameras at range in order to provide you with meaningful statistics about how your camera is performing in reality. This test is done as means of validating a camera calibration ensuring that overall calibration accuracy is statistically significant.</p>
 								<span class="image main"><img src="images/validation_setup.png" alt="" /></span>
-								<center><embed style='display:block' src="./images/validation_images.jpg" width=100%></embed></center>
+								<p>The triangulation test shows how accurate a camera performs in the real world. This test is performed at range, and encompasses the entire field of view to ensure a calibration has uniform accuracy across its image.</p>
+								<center><embed style='display:block' src="./images/validation_captureplan.gif" width=100%></embed></center>
 								<p>&nbsp</p>
+								<p>The distance between error for each triangulation target pair may be seen in the error plot below. This level of achieved accuracy is for a $20, 100° Arduino camera.</p>
 								<center><embed style='display:block' src="./images/efovee_errorplot.png" width=100%></embed></center>
 								<p><b>*Lens: <a href="https://www.arducam.com/product/m40180h10-2/">Arducam M40180H10 (100deg)</a></b> | <b>Sensor: <a href="https://www.arducam.com/product/arducam-1080p-low-light-low-distortion-usb-camera-module-with-microphones-2mp-sony-cmos-imx323-mini-uvc-usb2-0-webcam-board-with-3-3ft-1m-cable-for-windows-linux-android-and-mac-os/">Sony IMX323</a></b></p>
 								<center><embed style='display:block' src="./images/reprojectionerror.html" width=100%></embed></center>
