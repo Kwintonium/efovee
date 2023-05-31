@@ -97,7 +97,7 @@
 								<p>The triangulation test shows how accurate a camera performs in the real world. This test is performed at range, and encompasses the entire field of view to ensure a calibration has uniform accuracy across its image.</p>
 								<center><embed style='display:block' src="./images/validation_captureplan.gif" width=100%></embed></center>
 								<p>&nbsp</p>
-								<p>The distance between error for each triangulation target pair may be seen in the error plot below. This level of achieved accuracy is for a $20, 100° Arduino camera.</p>
+								<p>The distance between error for each triangulation target pair may be seen in the error plot below. In this error plot, 10.5mm in error is equivalent to 0.15% in relative error, or 0.03 degrees in error. This level of achieved accuracy is for a $20, 100° Arduino camera.</p>
 								<center><embed style='display:block' src="./images/efovee_errorplot.png" width=100%></embed></center>
 								<p><b>*Lens: <a href="https://www.arducam.com/product/m40180h10-2/">Arducam M40180H10 (100deg)</a></b> | <b>Sensor: <a href="https://www.arducam.com/product/arducam-1080p-low-light-low-distortion-usb-camera-module-with-microphones-2mp-sony-cmos-imx323-mini-uvc-usb2-0-webcam-board-with-3-3ft-1m-cable-for-windows-linux-android-and-mac-os/">Sony IMX323</a></b></p>
 								<center><embed style='display:block' src="./images/reprojectionerror.html" width=100%></embed></center>
@@ -106,12 +106,12 @@
 								<p>It can be seen that Efovee's method is 100 times more accurate than open source alternatives - such as OpenCV - which is accurate on the order of meters, not millimeters.</p>
 								<center><embed style='display:block' src="./images/opencv_errorplot.png" width=100%></embed></center>
 								<p>&nbsp</p>
+								<h4>Typical Recommended OpenCV Capture Plan</h4>
+								<span class="image main"><img src="images/opencv_captureplan.png" alt="" /></span>
 								<p><b>Focal Length (FLx, FLy): [779.3078823383955, 779.5024261178617] <br>
 								Principal Point (PPx, PPy): [935.4601002958335, 548.1790814974687] <br>
 								Center of Distortion (CoDx, CoDy): [935.4601002958335, 548.1790814974687] <br>
 								Distortion Coefficients (k1....kn): [-0.1211714968834584, 0.020701251377411144, -0.016331156539148923, 0.0045673639712470945]</b></p>
-								<h4>Typical Recommended OpenCV Capture Plan</h4>
-								<span class="image main"><img src="images/opencv_captureplan.png" alt="" /></span>
 							</article>
 
 						<!-- Contact -->
